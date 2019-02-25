@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>DOM Lesson one</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <ul>
+
      <button type="button" onclick="prompt('task name')">
        Add Task      
      </button>
@@ -17,7 +18,9 @@
     </ul>
 
 <script>
-        
+   const selection1 = document.getElementsByTagName("ul");
+   console.log(selection1);
+   document.body.style.backgroundColor="pink";
 </script>
 </body>
 </html>
