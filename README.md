@@ -1,4 +1,4 @@
 # hyf-javascript-week-3
-:heart:    &&     :unicorn: &&:smile: && :unicorn: && :smile: &&:heart:
+:heart: &&        :unicorn:  :smile:  && :unicorn: && :smile:  &&:heart:
 
-sheep :sheep::rabbit::rose:  :rainbow::tokyo_tower:
+:sheep: :rabbit::rose:  :rainbow::tokyo_tower: :shaved_ice: 
