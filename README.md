@@ -1,2 +1,4 @@
 # hyf-javascript-week-3
-I  :heart: Love   :coffee:   :pizza:   and :dancer: !
+:heart:    &&     :unicorn: &&:smile: && :unicorn: && :smile: &&:heart:
+
+sheep :sheep::rabbit::rose:  :rainbow::tokyo_tower:
