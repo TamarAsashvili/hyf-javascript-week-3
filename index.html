@@ -6,21 +6,34 @@
     <title>DOM Lesson one</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-    <ul>
+    <ul id="myList">
 
-     <button type="button" onclick="prompt('task name')">
+     <button onclick="myFunction()">
        Add Task      
      </button>
-
     </ul>
+    <span id="score">0</span>
 
 <script>
+   let userScore = 0;
    const selection1 = document.getElementsByTagName("ul");
    console.log(selection1);
    document.body.style.backgroundColor="pink";
+   const spanS = document.getElementById("score");
+   
+   
+function myFunction() {
+  userScore++;
+  spanS.innerHTML = userScore;
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("the task's name");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+ 
+}
 </script>
 </body>
 </html>
