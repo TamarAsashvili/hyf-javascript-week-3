@@ -9,31 +9,43 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <ul id="myList">
 
-     <button onclick="myFunction()">
-       Add Task      
-     </button>
-    </ul>
-    <span id="score">0</span>
+  <h3>task's name</h3>
+  
+  <form id="ourForm">
+  <input id ="ourField" type="text" autocomplete="off">
+  <button>ADD TASk</button>
+  </form>
+
+
+<span>Task's number</span>
+<span id="score">0</span>
+<ul id="ourList">
+     
+</ul>
+
 
 <script>
-   let userScore = 0;
-   const selection1 = document.getElementsByTagName("ul");
-   console.log(selection1);
-   document.body.style.backgroundColor="pink";
-   const spanS = document.getElementById("score");
-   
-   
-function myFunction() {
-  userScore++;
-  spanS.innerHTML = userScore;
-  var node = document.createElement("LI");
-  var textnode = document.createTextNode("the task's name");
-  node.appendChild(textnode);
-  document.getElementById("myList").appendChild(node);
- 
+let taskScore = 0;
+let ourForm =document.getElementById("ourForm");
+let ourField = document.getElementById("ourField");
+let ourList = document.getElementById("ourList");
+let spanS = document.getElementById("score");
+
+ourForm.addEventListener("submit", (event) => {
+  event.preventDefault()
+ createItem(ourField.value)
+});
+
+
+function createItem(x) {
+let ourHTML = `<LI> ${x}</LI>`
+ourList.insertAdjacentHTML("afterend", ourHTML)
+ourField.value=""  
+taskScore++;
+spanS.innerHTML = taskScore;
 }
+
 </script>
 </body>
 </html>
