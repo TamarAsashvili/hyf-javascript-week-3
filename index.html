@@ -14,7 +14,7 @@
   
   <form id="ourForm">
   <input id ="ourField" type="text" autocomplete="off">
-  <button>ADD TASk</button>
+  <button id="btn" disabled>ADD TASk</button>
   </form>
 
 
@@ -52,6 +52,19 @@ taskScore--;
 spanS.innerHTML = taskScore;    
 }
     
+document.addEventListener("input", function(){
+let textInput=document.getElementById("ourField").value.trim();
+    console.log("textInput");
+ if(textInput !==""){
+   document.getElementById("btn").disabled=false;
+  }else{
+    document.getElementById("btn").disabled=true;
+  }
+});
+
+
+let arr = ["Rotterdam", "Holland", 200];
+arr.forEach(x=>createItem(x)); 
     
 </script>
 </body>
