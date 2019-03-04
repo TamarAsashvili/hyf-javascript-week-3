@@ -41,7 +41,6 @@ ourForm.addEventListener("submit", (event) => {
 function createItem(x) {
 let ourHTML = `<LI> ${x} <button onclick="deleteItem(this)"> delete </button></LI>`
 ourList.insertAdjacentHTML("afterend", ourHTML)
-ourField.value=""  
 taskScore++;
 spanS.innerHTML = taskScore;
 }
