@@ -3,4 +3,4 @@
 
 :heart: &&        :unicorn:  :smile:  && :unicorn: && :smile:  &&:heart:
 
-:sheep: :rabbit::rose:  :rainbow::tokyo_tower: :shaved_ice: :georgia:
+:sheep: :rabbit::rose:  :rainbow::tokyo_tower:
